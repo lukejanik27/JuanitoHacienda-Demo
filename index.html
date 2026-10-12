@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juanito Hacienda | Authentic Mexican Kitchen</title>
+  <meta name="description" content="Juanito Hacienda serves wood-fired Mexican classics, handmade tortillas and family recipes. A fictional restaurant demo site.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌮%3C/text%3E%3C/svg%3E">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="demo-banner">Juanito Hacienda is a fictional restaurant created for demonstration purposes.</div>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="index.html">Juanito <span>Hacienda</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Auténtica Cocina Mexicana · Since 1987</p>
+        <h1>Juanito Hacienda</h1>
+        <p class="tag">Wood-fired flavors, handmade tortillas and recipes passed down through three generations. Pull up a chair. <em>Mi casa es tu casa.</em></p>
+        <div class="actions">
+          <a class="btn" href="reservations.html">Reserve a Table</a>
+          <a class="btn outline" href="menu.html">View the Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title reveal">
+          <h2>Why You'll Love It Here</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="grid three">
+          <div class="card reveal">
+            <div class="icon">🔥</div>
+            <h3>Wood-Fired Kitchen</h3>
+            <p>Our meats and vegetables are grilled over mesquite and oak for the smoky depth you can't fake.</p>
+          </div>
+          <div class="card reveal">
+            <div class="icon">🌽</div>
+            <h3>Tortillas Made Daily</h3>
+            <p>Heirloom corn is nixtamalized and pressed in-house every morning. You can taste the difference.</p>
+          </div>
+          <div class="card reveal">
+            <div class="icon">🍹</div>
+            <h3>Craft Margaritas</h3>
+            <p>Fresh-squeezed lime, 100% agave tequila and a bar list built for sipping slowly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="container">
+        <div class="section-title reveal">
+          <h2>Guest Favorites</h2>
+          <p>The dishes our regulars order again and again.</p>
+          <div class="divider"></div>
+        </div>
+        <div class="grid three">
+          <div class="card reveal">
+            <div class="dish-art">🥩</div>
+            <h3>Carne Asada Hacienda</h3>
+            <p>Twelve-ounce marinated skirt steak with grilled scallions, rice and charro beans.</p>
+          </div>
+          <div class="card reveal">
+            <div class="dish-art">🌮</div>
+            <h3>Cochinita Pibil Tacos</h3>
+            <p>Slow-roasted achiote pork with pickled onion and a kick of habanero salsa.</p>
+          </div>
+          <div class="card reveal">
+            <div class="dish-art">🌶️</div>
+            <h3>Mole Poblano Enchiladas</h3>
+            <p>Chicken enchiladas under a 24-ingredient mole, finished with sesame and crema.</p>
+          </div>
+        </div>
+        <p class="center mt"><a class="btn dark-outline" href="menu.html">See the Full Menu</a></p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container split">
+        <div class="art-block reveal" role="img" aria-label="Decorative sun and cactus">🌵</div>
+        <div class="reveal">
+          <p class="eyebrow" style="color: var(--terracotta);">Our Story</p>
+          <h2>A Family Table, Open to Everyone</h2>
+          <p>Juanito Hacienda started in 1987 as a six-table cantina run by Juan "Juanito" Morales and his wife Lucía. Today, their children carry on the same recipes and the same promise: nobody leaves hungry.</p>
+          <a class="btn dark-outline" href="about.html">Read Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="green-band">
+      <div class="container">
+        <div class="stat-row">
+          <div class="stat reveal"><strong>35+</strong>Years of tradition</div>
+          <div class="stat reveal"><strong>24</strong>Ingredients in our mole</div>
+          <div class="stat reveal"><strong>4.6★</strong>Average guest rating</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="container split">
+        <div class="reveal">
+          <h2>Visit Us</h2>
+          <p><span id="open-status"></span></p>
+          <p>482 Cactus Lane<br>Santa Fe, NM 87501<br>(555) 010-1234</p>
+          <table class="hours-table" aria-label="Opening hours">
+            <tr data-day="1"><td>Monday</td><td>11 AM – 9 PM</td></tr>
+            <tr data-day="2"><td>Tuesday</td><td>11 AM – 9 PM</td></tr>
+            <tr data-day="3"><td>Wednesday</td><td>11 AM – 9 PM</td></tr>
+            <tr data-day="4"><td>Thursday</td><td>11 AM – 9 PM</td></tr>
+            <tr data-day="5"><td>Friday</td><td>11 AM – 11 PM</td></tr>
+            <tr data-day="6"><td>Saturday</td><td>11 AM – 11 PM</td></tr>
+            <tr data-day="0"><td>Sunday (Brunch)</td><td>10 AM – 8 PM</td></tr>
+          </table>
+        </div>
+        <div class="card reveal">
+          <h3>What Guests Are Saying</h3>
+          <p class="stars">★★★★★</p>
+          <p><em>“We came for a quick lunch and stayed for two hours. The carne asada was perfectly charred and the tortillas were still warm.”</em></p>
+          <p><strong>Maria G.</strong> · <a href="reviews.html">Read more reviews</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="green-band cta">
+      <div class="container">
+        <h2>Hungry Yet?</h2>
+        <p>Book your table in under a minute, or plan a celebration with our private dining and catering team.</p>
+        <a class="btn" href="reservations.html">Reserve a Table</a>
+        <a class="btn outline" href="events.html">Events &amp; Catering</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Juanito Hacienda</h4><p>Family recipes, wood-fired flavor and a warm table waiting for you.</p></div>
+        <div><h4>Explore</h4><a href="menu.html">Menu</a><a href="reviews.html">Reviews</a><a href="about.html">Our Story</a><a href="events.html">Events &amp; Catering</a></div>
+        <div><h4>Visit</h4><p>482 Cactus Lane<br>Santa Fe, NM 87501</p><p>(555) 010-1234</p></div>
+        <div><h4>Hours</h4><p>Mon–Thu 11 AM–9 PM<br>Fri–Sat 11 AM–11 PM<br>Sun 10 AM–8 PM</p></div>
+      </div>
+      <div class="footer-bottom">© <span class="year"></span> Juanito Hacienda. A fictional restaurant created for demonstration purposes.</div>
+    </div>
+  </footer>
+</body>
+</html>

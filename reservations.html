@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservations | Juanito Hacienda</title>
+  <meta name="description" content="Reserve a table at Juanito Hacienda.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌮%3C/text%3E%3C/svg%3E">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="demo-banner">Juanito Hacienda is a fictional restaurant created for demonstration purposes.</div>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="index.html">Juanito <span>Hacienda</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Reserve a Table</h1>
+        <p>We'll save you a seat. Parties of 9 or more, please see our <a href="events.html" style="color: var(--gold);">events page</a>.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="grid two">
+          <form class="styled" data-demo-form data-success="Your reservation request has been received! (Demo only: nothing was actually sent.)" novalidate style="margin: 0; max-width: none;">
+            <div class="field"><label for="res-name">Full name</label><input id="res-name" type="text" required autocomplete="name"><span class="error"></span></div>
+            <div class="form-row">
+              <div class="field"><label for="res-email">Email</label><input id="res-email" type="email" required autocomplete="email"><span class="error"></span></div>
+              <div class="field"><label for="res-phone">Phone</label><input id="res-phone" type="tel" required autocomplete="tel"><span class="error"></span></div>
+            </div>
+            <div class="form-row">
+              <div class="field"><label for="res-date">Date</label><input id="res-date" type="date" data-min-today required><span class="error"></span></div>
+              <div class="field"><label for="res-time">Time</label><select id="time-options" required></select><span class="error"></span></div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="res-party">Party size</label>
+                <select id="res-party" required>
+                  <option value="">Select</option>
+                  <option>1</option><option>2</option><option>3</option><option>4</option>
+                  <option>5</option><option>6</option><option>7</option><option>8</option>
+                </select>
+                <span class="error"></span>
+              </div>
+              <div class="field">
+                <label for="res-occasion">Occasion (optional)</label>
+                <select id="res-occasion">
+                  <option value="">None</option>
+                  <option>Birthday</option>
+                  <option>Anniversary</option>
+                  <option>Date night</option>
+                  <option>Business meal</option>
+                </select>
+                <span class="error"></span>
+              </div>
+            </div>
+            <div class="field"><label for="res-notes">Special requests or allergies</label><textarea id="res-notes" rows="3"></textarea><span class="error"></span></div>
+            <button class="btn" type="submit">Request Reservation</button>
+            <div class="success" role="status"></div>
+          </form>
+
+          <div>
+            <div class="card reveal">
+              <h3>Hours</h3>
+              <table class="hours-table" aria-label="Opening hours">
+                <tr data-day="1"><td>Monday</td><td>11 AM – 9 PM</td></tr>
+                <tr data-day="2"><td>Tuesday</td><td>11 AM – 9 PM</td></tr>
+                <tr data-day="3"><td>Wednesday</td><td>11 AM – 9 PM</td></tr>
+                <tr data-day="4"><td>Thursday</td><td>11 AM – 9 PM</td></tr>
+                <tr data-day="5"><td>Friday</td><td>11 AM – 11 PM</td></tr>
+                <tr data-day="6"><td>Saturday</td><td>11 AM – 11 PM</td></tr>
+                <tr data-day="0"><td>Sunday (Brunch)</td><td>10 AM – 8 PM</td></tr>
+              </table>
+            </div>
+            <div class="card reveal mt">
+              <h3>Good to Know</h3>
+              <ul class="info-list">
+                <li>🕒 We hold tables for 15 minutes past your reservation time.</li>
+                <li>🌿 The patio is first come, first served.</li>
+                <li>♿ The dining room and restrooms are fully accessible.</li>
+                <li>🐕 Well-behaved dogs are welcome on the patio.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Juanito Hacienda</h4><p>Family recipes, wood-fired flavor and a warm table waiting for you.</p></div>
+        <div><h4>Explore</h4><a href="menu.html">Menu</a><a href="reviews.html">Reviews</a><a href="about.html">Our Story</a><a href="events.html">Events &amp; Catering</a></div>
+        <div><h4>Visit</h4><p>482 Cactus Lane<br>Santa Fe, NM 87501</p><p>(555) 010-1234</p></div>
+        <div><h4>Hours</h4><p>Mon–Thu 11 AM–9 PM<br>Fri–Sat 11 AM–11 PM<br>Sun 10 AM–8 PM</p></div>
+      </div>
+      <div class="footer-bottom">© <span class="year"></span> Juanito Hacienda. A fictional restaurant created for demonstration purposes.</div>
+    </div>
+  </footer>
+</body>
+</html>
